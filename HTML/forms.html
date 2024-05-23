@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- html form -->
+
+    <form action="submit_page.php" method="post">
+        <!-- usage of form elements : input, text area, select, button -->
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required />
+         <br />
+         <br />
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required/>
+        <br />
+        <br />
+       <label for="email">Email:</label>
+       <input type="email" name="email" id="email" required />
+       <br>
+       <br>
+       <label for="message">Message:</label>
+       <textarea name="" id="message" cols="50" rows="4"></textarea>
+        <br>
+        <br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+        </select>
+        <br>
+        <br>
+        <!-- Radio buttons and checkboxes to provide options for user to make selections -->
+
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">Option1</label>
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">Option2</label>
+        <input type="radio" id="option3" name="options" value="option3">
+        <label for="option3">Option3</label>
+        <input type="radio" id="option4" name="options" value="option4">
+        <label for="option4">Option4</label>
+        <br>
+        <br>
+        <input type="radio" id="option1" name="otheroptions" value="option1">
+        <label for="option1">Option1</label>
+        <input type="radio" id="option2" name="otheroptions" value="option2">
+        <label for="option2">Option2</label>
+        <br>
+        <br>
+        <input type="checkbox" name="choices" id="optionA" value="optionA">
+        <label for="optionA">Option A</label>
+        <input type="checkbox" name="choices" id="optionA" value="optionB">
+        <label for="optionB">Option B</label>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
